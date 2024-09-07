@@ -1,0 +1,81 @@
+print "CALCULADORA EN BASIC"
+print "Dime que operacion quieres hacer:"
+print "1. Suma"
+print "2. Resta"
+print "3. Multiplicacion"
+print "4. Division"
+print "5. Elevar"
+print "6. Derivar [ y(x) = ax^n ]"
+print "7. Integral [ y(x) = ax^n ]"
+input operacion
+if operacion = 1 THEN
+	print "indicame el primer operando:"
+	input op1
+	print "indicame el segundo operando:"
+	input op2
+	let res = op1 + op2
+	print "El resultado es: ",res
+END IF
+if operacion = 2 THEN
+	print "indicame el primer operando:"
+	input op1
+	print "indicame el segundo operando:"
+	input op2
+	let res = op1 - op2
+	print "El resultado es: ",res
+END IF
+if operacion = 3 THEN
+	print "indicame el primer operando:"
+	input op1
+	print "indicame el segundo operando:"
+	input op2
+	let res = op1 * op2
+	print "El resultado es: ",res
+END IF
+if operacion = 4 THEN
+	print "indicame el primer divisior:"
+	input op1
+	print "indicame el segundo dividendo:"
+	input op2
+	let res = op1 / op2
+	print "El resultado es: ",res
+END IF
+if operacion = 5 THEN
+	print "indicame el numero base:"
+	input op1
+	print "indicame el exponente:"
+	input op2
+	let res = op1 ^ op2
+	print "El resultado es: ",res
+END IF
+if operacion = 6 THEN
+			
+	print "Indicame la contante (a):"
+	input a
+	print "Indicame el exponente (n):"
+	input n
+	derivada_a = a * n
+	derivada_n = n - 1
+	if n = 0 THEN
+		print "La derivada de una constante es 0"
+	ELSE
+		print "La derivada es: "; derivada_a; "x^"; derivada_n
+	END IF		
+END IF
+if operacion = 7 THEN
+			
+	print "Indicame la contante (a):"
+	input a
+	print "Indicame el exponente (n):"
+	input n
+	
+	if n = -1 THEN
+		print "La integral de "; a; "/x es: "; a; " * ln(|x|) + C"
+	ELSE
+		integral_a = a / (n + 1)
+		integral_n = n + 1
+		print "La derivada es: "; integral_a; "x^"; integral_n
+	END IF		
+END IF
+print ""
+print "Coder: Miguel Blanquez Bravo"
